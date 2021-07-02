@@ -15,6 +15,8 @@ public class PupperController {
     PupperService service;
 
     @GetMapping("/puppers")
+
+
     public ResponseEntity<Iterable<Pupper>> findAllPuppers(){
         return new ResponseEntity(service.findAllPuppers(), HttpStatus.OK);
     }
